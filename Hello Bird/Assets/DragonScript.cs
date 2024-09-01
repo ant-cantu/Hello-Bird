@@ -9,6 +9,7 @@ public class DragonScript : MonoBehaviour
     public float flapStrength;
     public LogicScript logic;
     public Animator animator;
+    public AudioSource soundFlap;
 
     // Start is called before the first frame update
     void Start()
@@ -19,8 +20,11 @@ public class DragonScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) && !logic.isGameOver) 
+        if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) && !logic.isGameOver)
+        {
             myRigidBody.velocity = Vector2.up * flapStrength;
+            soundFlap.Play();
+        }
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
