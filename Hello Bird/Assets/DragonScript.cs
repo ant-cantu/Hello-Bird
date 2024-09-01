@@ -6,6 +6,7 @@ using UnityEngine;
 public class DragonScript : MonoBehaviour
 {
     public Rigidbody2D myRigidBody;
+    public float rotationSpeed = 5; 
     public float flapStrength;
     public LogicScript logic;
     public Animator animator;
@@ -22,9 +23,15 @@ public class DragonScript : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButtonDown(0) && !logic.isGameOver)
         {
+
             myRigidBody.velocity = Vector2.up * flapStrength;
             soundFlap.Play();
         }
+    }
+
+    private void FixedUpdate()
+    {
+        transform.rotation = Quaternion.Euler(0, 0, myRigidBody.velocity.y * rotationSpeed);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
