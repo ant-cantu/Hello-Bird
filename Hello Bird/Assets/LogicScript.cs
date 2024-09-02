@@ -48,4 +48,9 @@ public class LogicScript : MonoBehaviour
             highScoreText.text = "High Score: " + highScore;
         }
     }
+
+    public int getScore()
+    {
+        return playerScore;
+    }
 }
