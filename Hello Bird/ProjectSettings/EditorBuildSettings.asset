@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Scenes/Hello Bird.unity
+    path: Assets/Scenes/StartScreen.unity
+    guid: 256c34cf48cd4bc439762b00e13afc5c
+  - enabled: 1
+    path: Assets/Scenes/Game.unity
     guid: e67de5a3acca57f4992deb8cde8308d5
   m_configObjects: {}
