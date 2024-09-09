@@ -3,4 +3,4 @@
 *.shader linguist-detectable=false
 *.cs linguist-detectable=true
 *.hlsl linguist-detectable=false
-*.* linguist-language=CS
+*.* linguist-language=C#
