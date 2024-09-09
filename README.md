@@ -2,8 +2,9 @@
 
 ## About Hello Dragon
 
-This is a simple flappy bird clone I made for Android. This was
-made using the Unity Engine. I made this to familiarize myself
+This is a simple flappy bird clone I made for Android. This is
+my version of "Hello World" with Unity. This project was developed
+using the Unity Engine. I made this to familiarize myself
 with the Unity software, and get back into coding in C#.
 
 ## Built With
